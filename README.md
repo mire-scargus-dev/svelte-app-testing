@@ -38,3 +38,4 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
 **Crear un commit y PR**
+**Crear commit desde otra rama para msotrar un PR**
