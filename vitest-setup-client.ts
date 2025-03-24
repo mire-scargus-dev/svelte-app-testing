@@ -1,5 +1,26 @@
 import '@testing-library/jest-dom/vitest';
+import '@testing-library/jest-dom';
 import { vi } from 'vitest';
+
+globalThis.document = globalThis.document || {};
+globalThis.window = globalThis.window || {};
+
+globalThis.document = window.document;
+globalThis.window = globalThis.window || {};
+
+global.ResizeObserver = class {
+	observe() {}
+	unobserve() {}
+	disconnect() {}
+};
+
+if (typeof global.ResizeObserver === 'undefined') {
+	global.ResizeObserver = class {
+		observe() {}
+		unobserve() {}
+		disconnect() {}
+	};
+}
 
 // required for svelte5 + jsdom as jsdom does not support matchMedia
 Object.defineProperty(window, 'matchMedia', {
