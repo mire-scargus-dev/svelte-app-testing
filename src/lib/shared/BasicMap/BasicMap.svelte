@@ -55,7 +55,7 @@
  -->
 
 <!-- Contenedor del mapa -->
-<div id="map-basic" class="group inline-flex"></div>
+<div id="map-basic" data-testid= "map-basic" class="group inline-flex"></div>
 
 <style>
 	#map-basic {
