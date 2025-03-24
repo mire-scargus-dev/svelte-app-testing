@@ -81,6 +81,13 @@
 	});
 </script>
 
+<!-- @component
+    ```Svelte
+        <StyledMap />
+    ```
+    map with customized styles through OpenLayers and Geoserver
+ -->
+
 <div id="map-styled" class="group inline-flex"></div>
 
 <style>

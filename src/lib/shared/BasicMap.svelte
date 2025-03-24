@@ -47,6 +47,13 @@
 	});
 </script>
 
+<!-- @component
+    ```Svelte
+        <BasicMap />
+    ```
+    basic map through OpenLayers and Geoserver
+ -->
+
 <!-- Contenedor del mapa -->
 <div id="map-basic" class="group inline-flex"></div>
 
