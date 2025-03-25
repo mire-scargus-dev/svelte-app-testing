@@ -2,18 +2,7 @@ import '@testing-library/jest-dom/vitest';
 import '@testing-library/jest-dom';
 import { vi } from 'vitest';
 
-globalThis.document = globalThis.document || {};
-globalThis.window = globalThis.window || {};
-
-globalThis.document = window.document;
-globalThis.window = globalThis.window || {};
-
-global.ResizeObserver = class {
-	observe() {}
-	unobserve() {}
-	disconnect() {}
-};
-
+// pAra evitar errores al correr tests que prueben contenido dinámico
 if (typeof global.ResizeObserver === 'undefined') {
 	global.ResizeObserver = class {
 		observe() {}
