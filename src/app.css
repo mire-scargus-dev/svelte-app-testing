@@ -1,2 +1,2 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
+@import './../node_modules/do-design-system/dist/do-theme/tailwind.css';
